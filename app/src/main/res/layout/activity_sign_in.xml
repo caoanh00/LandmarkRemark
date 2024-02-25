@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signin.SignInActivity">
+
+    <TextView
+        android:id="@+id/sign_in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/sign_in_title"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_email_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:hint="@string/sign_in_email_hint"
+        android:theme="@style/TextInputLayout"
+        app:hintTextAppearance="@style/TextInputLayout.Label"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_password_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:hint="@string/sign_in_password_hint"
+        android:theme="@style/TextInputLayout"
+        app:hintTextAppearance="@style/TextInputLayout.Label"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_email_text_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/text_normal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/sign_in_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:buttonTint="@color/light_blue"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="@id/sign_in_password_text_layout"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_password_text_layout" />
+
+    <TextView
+        android:id="@+id/sign_in_checkbox_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/sign_in_remember_me"
+        app:layout_constraintBottom_toBottomOf="@id/sign_in_checkbox"
+        app:layout_constraintStart_toEndOf="@id/sign_in_checkbox"
+        app:layout_constraintTop_toTopOf="@id/sign_in_checkbox" />
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_checkbox" />
+
+    <TextView
+        android:id="@+id/sign_in_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium"
+        android:text="@string/sign_in_register"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

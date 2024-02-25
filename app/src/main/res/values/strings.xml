@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Landmark Remark</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Noted</string>
+
+<!--    string-->
+    <string name="title_menu_explore">Map</string>
+    <string name="title_menu_collections">Notes</string>
+    <string name="title_menu_profile">Me</string>
+    <string name="common_back">Back</string>
+    <string name="common_next">Next</string>
+    <string name="common_confirm">Ok</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="location_permission_alert_title">Location Permission</string>
+    <string name="location_permission_alert_message">To enable full functions of this app, we need to access this device\'s location</string>
+    <string name="sign_in_title">Landmark Remark</string>
+    <string name="sign_in_social_hint">or sign in with</string>
+    <string name="sign_in_email_hint">Email</string>
+    <string name="sign_in_password_hint">Password</string>
+    <string name="sign_in_register"><u>Sign up</u></string>
+    <string name="sign_in_forgot_pw">Forgot Password?</string>
+    <string name="sign_in_remember_me">Remember me</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_email_blank">Email must not be empty.</string>
+    <string name="user_email_incorrect">Incorrect email format.</string>
+    <string name="user_password_length_limit">The password length must be from 6 characters.</string>
+    <string name="user_password_blank">Password must not be empty</string>
+    <string name="msg_no_locations">No Noted Locations</string>
+    <string name="msg_un_noted_location">-</string>
+    <string name="title_new_location">New</string>
+    <string name="add_location_note_hint"><u>Add Note</u></string>
+    <string name="add_location_note_info_title_hint">Title</string>
+    <string name="add_location_note_info_description_hint">Description</string>
+    <string name="search_hint">Search with words or user name</string>
+    <string name="add_location_note_title">Add note</string>
+    <string name="profile_name_title">Email</string>
+    <string name="profile_notes_title">Noted locations</string>
+    <string name="add_location_note_info_visibility_checkbox_hint">Set as public note</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="sign_up_email_hint">@string/sign_in_email_hint</string>
+    <string name="sign_up_password_hint">@string/sign_in_password_hint</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_success">Sign up success\nPlease sign in with your new account</string>
+    <string name="sign_up_fail">Sign up fail\n%s</string>
+    <string name="sign_in_fail">Sign in fail\n%s</string>
+    <string name="creator_name_txt">Created by: %s</string>
+    <string name="sign_out"><u>Sign out</u></string>
+    <string name="sign_up_user_name_hint">User name</string>
+    <string name="user_name_blank">User name must not be empty</string>
+    <string name="collection_note_info_title">Title: </string>
+    <string name="collection_note_description_title">Description: </string>
+
+</resources>
