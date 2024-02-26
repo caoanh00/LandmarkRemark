@@ -112,6 +112,7 @@ class SignInActivity : AppCompatActivity() {
         MainRepository.signInWithEmailAndPassword(binding.signInEmail.text.toString(), binding.signInPassword.text.toString(), this, object:
             IOnCompleteListener {
             override fun onSuccess() {
+                loadingDialog.dismiss()
                 SharedPreferenceUtils.setEmail(binding.signInEmail.text.toString())
                 SharedPreferenceUtils.setPassword(binding.signInPassword.text.toString())
                 SharedPreferenceUtils.setRememberMe(binding.signInCheckbox.isChecked)
@@ -119,6 +120,7 @@ class SignInActivity : AppCompatActivity() {
             }
 
             override fun onError(err: Exception?) {
+                loadingDialog.dismiss()
                 val error = getString(R.string.sign_in_fail, err.toString())
                 Toast.makeText(this@SignInActivity, error, Toast.LENGTH_LONG).show()
             }

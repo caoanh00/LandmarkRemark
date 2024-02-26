@@ -97,6 +97,7 @@ class SignUpActivity : AppCompatActivity() {
         MainRepository.createUserWithEmailAndPassword(binding.signUpEmail.text.toString(), binding.signUpPassword.text.toString(), this, object:
             IOnCompleteListener {
                 override fun onSuccess() {
+                    loadingDialog.dismiss()
                     SharedPreferenceUtils.setEmail(binding.signUpEmail.text.toString())
                     SharedPreferenceUtils.setPassword(binding.signUpPassword.text.toString())
 
@@ -107,6 +108,7 @@ class SignUpActivity : AppCompatActivity() {
                 }
 
                 override fun onError(err: Exception?) {
+                    loadingDialog.dismiss()
                     val error = getString(R.string.sign_up_fail, err.toString())
                     Toast.makeText(this@SignUpActivity, error, Toast.LENGTH_LONG).show()
                 }

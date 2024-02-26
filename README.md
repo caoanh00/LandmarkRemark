@@ -1,5 +1,8 @@
 # Landmark Remark
 Landmark Remark is a native Android app in Kotlin. It uses Google Map SDK and Firebase services. The main function of the app is to add notes on the map.
+- Used Firebase Authentication to manage user information.
+- Used Firebase Realtime Database to store notes of user.
+- Used Google Map SDK to load map.
 
 # Time Spent
 Hours spent on implementing the app:
